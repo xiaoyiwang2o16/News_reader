@@ -1,0 +1,27 @@
+/* Make it a marquee */
+.news_reader {
+    width: 100% !important;
+    margin: 0 auto !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    border: 1px green solid !important;
+}
+
+.news_reader p {
+    display: inline-block !important;
+    padding-left: 100% !important;
+    text-indent: 0 !important;
+    font-size: "large" !important;
+    color: green !important;
+    animation: news_reader 120s linear !important;
+}
+.news_reader p:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes news_reader {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
