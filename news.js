@@ -1,7 +1,6 @@
 // navbar.style.position = "fixed";
 // navbar.style.bottom = '0';
 
-
 var mykey = //YOUR_KEY_HERE
 var xhr = new XMLHttpRequest();
 
@@ -50,7 +49,7 @@ function get_news() {
 				output += "<a href="+articles[a].url+' style="color: rgb(255,255,255)" target="_blank">'+articles[a].title+"</a>"
 				output += '&nbsp &nbsp &nbsp &nbsp &#8226 &nbsp &nbsp &nbsp &nbsp';
 			}
-			output += "<a href="+articles[articles.length-1].url+"style='color: rgb(255,255,255)' target='_blank'>"+articles[articles.length-1].title+"</a>"
+			output += "<a href="+articles[articles.length-1].url+' style="color: rgb(255,255,255)" target="_blank">'+articles[articles.length-1].title+"</a>"
 			document.getElementById('scroll').innerHTML = output
 			var newElem = document.getElementById('scroll');
 			var replaced = newElem.cloneNode(true);
