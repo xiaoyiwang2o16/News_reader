@@ -1,23 +1,33 @@
 /* Make it a marquee */
+/*.scroll {
+    text-indent: 0 !important;
+    font-size: "large" !important;
+    color: black !important;
+}*/
+
 .news_reader {
     width: 100% !important;
     margin: 0 auto !important;
     white-space: nowrap !important;
     overflow: hidden !important;
     box-sizing: border-box !important;
-    border: 1px green solid !important;
+    height: 50px;
+    background-color: gray;
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
 }
 
 .news_reader p {
     display: inline-block !important;
     padding-left: 100% !important;
-    text-indent: 0 !important;
-    font-size: "large" !important;
-    color: green !important;
+    margin: 15px;
     animation: news_reader 120s linear !important;
 }
+
+
 .news_reader p:hover {
-    animation-play-state: paused
+    animation-play-state: paused !important;
 }
 
 /* Make it move */
